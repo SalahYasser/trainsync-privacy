@@ -1,2 +1,7 @@
-# trainsync-privacy
-Independent bilingual privacy policy for Train&amp;Sync.
+# Train&Sync privacy pages
+
+Static GitHub Pages source. `index.html` is English, `ar/index.html` is Arabic, and `style.css` is shared. `.nojekyll` allows direct static serving. Intended base URL: `https://salahyasser.github.io/trainsync-privacy/`. Both pages contain `noindex`; no robots.txt blocks crawlers. The policy text comes from the approved publication drafts dated 2026-11-20; headings aid scanning without changing the paragraphs.
+
+The single-column layout uses system fonts, dark defaults, and a light system preference. The approved five-color palette takes precedence over generic design guidance: dark uses #834870 background with #F9F0F0 text; light reverses them. The surface matches the background, and details use palette colors. Links use the text foreground for contrast; the accent is reserved for boundaries. Relative links keep both languages functional under the project base path. There are no scripts, trackers, or external assets.
+
+Design references: [W3C reflow and text resizing](https://www.w3.org/WAI/WCAG22/Understanding/reflow), [W3C text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), [MDN color scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40media/prefers-color-scheme), and [MDN noindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/robots). These inform design; browser and assistive technology verification is still required. `noindex` is a crawler instruction, not access control.

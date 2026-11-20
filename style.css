@@ -1,0 +1,78 @@
+:root {
+  color-scheme: dark;
+  --background: #834870;
+  --foreground: #f9f0f0;
+  --surface: #834870;
+  --line: #e5c9d8;
+  --focus: #e5c9d8;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --background: #f9f0f0;
+    --foreground: #834870;
+    --surface: #f9f0f0;
+    --line: #834870;
+    --focus: #834870;
+  }
+}
+* { box-sizing: border-box; }
+html { font-family: system-ui, -apple-system, sans-serif; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+a { color: inherit; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.skip {
+  position: absolute;
+  inset-block-start: -10rem;
+  inset-inline-start: 1rem;
+  padding: .75rem;
+  background: var(--surface);
+  z-index: 1;
+}
+.skip:focus { inset-block-start: 1rem; }
+.site-header { border-block-end: 1px solid var(--line); }
+.header-inner {
+  max-width: 54rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.brand { font-weight: 750; font-size: 1.125rem; }
+nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: .5rem .75rem;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  margin-block: .5rem;
+}
+nav a:hover { text-decoration: underline; }
+.page { max-width: 54rem; margin-inline: auto; padding: 2.5rem clamp(.75rem, 3vw, 1.25rem) 5rem; }
+article { background: var(--surface); padding: clamp(.75rem, 3vw, 2rem); border-radius: 1rem; }
+.page-heading { border-block-end: 1px solid var(--line); padding-block-end: 1.25rem; }
+h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.25; margin: 0; }
+.date { margin: 1rem 0 0; }
+section { margin-block-start: 2rem; }
+h2 { font-size: 1.25rem; line-height: 1.4; margin: 0 0 .5rem; }
+p { margin: 0; }
+section a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  max-width: 100%;
+}
